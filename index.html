@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Regressiva</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+</head>
+<body>
+    <h1>Contagem Regressiva</h1>
+    <div class="wrapper">
+        <div class="count-wrapper">
+            <div id='watch'>00:00:00</div>
+            <span>Tempo</span>
+        </div>
+    </div>
+    <h3>Setar tempo</h3>
+    <div class="wrapper">
+        <div class="tamanho">
+            <input type="number" id="hours-input" placeholder="Horas" style="width: 100px"/>
+        </div>
+        <div class="tamanho">
+            <input type="number" id="minutes-input" placeholder="Minutos" style="width: 100px"/>
+        </div>
+        <div class="tamanho">
+            <input type="number" id="seconds-input" placeholder="Segundos" style="width: 100px" />
+        </div>
+    </div>
+    <h3> Configurações</h3>
+    <div class="wrapper">
+        <div class="playbutton" onclick="changeButton()"><button id='start' onclick='start()''>Iniciar</button></div>
+        <button id="reset" onclick="reset()">Resetar</button>
+    </div>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
